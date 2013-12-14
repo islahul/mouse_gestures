@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.direction {
+    text-transform: capitalize;
+}
+
+.viewWindow {
+  background: #EEFFEE;
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.gesture {
+  color: #FF0000;
+  font-size: 16px;
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Mouse Gestures</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<canvas id="mouseDirectionViewer" width="100" height="100"></canvas>
+	<div class="direction">
+	</div>
+	<div class="gesture">
+	</div>
+	<div class="viewWindow">
+	</div>
+
+	<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="levenshtein.js"></script>
+    <script type="text/javascript" src="mouse_gesture.js"></script>
+
+	<script>
+        var mgInstance = new MouseGesture({
+            containerEl: $('.viewWindow'),
+            skipPixels: 4,
+            historySensitivity: 12,
+            motionSensitivity: 20,
+            directionTimeSensitivity: 400,
+            gestureTimeSensitivity: 700
+        });
+	</script>
+</body>
+
+</html>
